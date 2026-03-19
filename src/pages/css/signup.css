@@ -1,0 +1,134 @@
+.signup-page {
+  min-height: 100svh;
+  width: 100%;
+  padding: 2rem;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(126, 87, 255, 0.16), transparent 38%),
+    radial-gradient(circle at 90% 20%, rgba(0, 199, 255, 0.1), transparent 34%),
+    #0f1117;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 380px;
+  padding: 1.6rem;
+  border: 1px solid rgba(158, 170, 198, 0.2);
+  background: rgba(17, 21, 30, 0.6);
+  border-radius: 1rem;
+  backdrop-filter: blur(8px);
+}
+
+.signup-header {
+  margin-bottom: 1.4rem;
+  text-align: center;
+}
+
+.signup-header h1 {
+  margin: 0 0 0.4rem;
+  color: #f4f7ff;
+  font-size: 1.5rem;
+}
+
+.signup-header p {
+  margin: 0;
+  color: #a9b4cd;
+  font-size: 0.9rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-group label {
+  color: #d2d8e5;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.form-group input {
+  border: 1px solid rgba(158, 170, 198, 0.28);
+  background: rgba(25, 30, 41, 0.5);
+  border-radius: 0.6rem;
+  padding: 0.65rem 0.8rem;
+  color: #f2f6ff;
+  font-size: 0.9rem;
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+
+.form-group input::placeholder {
+  color: #7a8a9e;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: rgba(126, 87, 255, 0.6);
+  background: rgba(25, 30, 41, 0.7);
+}
+
+.signup-btn {
+  border: none;
+  border-radius: 0.65rem;
+  padding: 0.7rem 1rem;
+  background: linear-gradient(135deg, #7e57ff, #41b3ff);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 10px 25px rgba(65, 179, 255, 0.18);
+  margin-top: 0.3rem;
+}
+
+.signup-btn:hover {
+  transform: translateY(-1px);
+}
+
+.signup-footer {
+  text-align: center;
+  padding: 0.8rem 0;
+  border-top: 1px solid rgba(158, 170, 198, 0.15);
+}
+
+.signup-footer p {
+  margin: 0 0 0.4rem;
+  color: #a9b4cd;
+  font-size: 0.85rem;
+}
+
+.signup-link {
+  color: #7e57ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.18s ease;
+  font-size: 0.85rem;
+}
+
+.signup-link:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 480px) {
+  .signup-page {
+    padding: 1rem;
+  }
+
+  .signup-container {
+    padding: 1.6rem;
+  }
+
+  .signup-header h1 {
+    font-size: 1.4rem;
+  }
+}

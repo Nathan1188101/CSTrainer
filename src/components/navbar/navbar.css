@@ -1,0 +1,68 @@
+.site-navbar {
+  width: min(1040px, 100%);
+  margin: 0 auto 2.2rem;
+  padding: 0.7rem 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid rgba(158, 170, 198, 0.28);
+  border-radius: 0.9rem;
+  background: rgba(17, 21, 30, 0.7);
+  backdrop-filter: blur(6px);
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #eef3ff;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.brand-dot {
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #7e57ff, #41b3ff);
+  box-shadow: 0 0 16px rgba(65, 179, 255, 0.45);
+}
+
+.navbar-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.navbar-link {
+  color: #b8c2d8;
+  font-size: 0.95rem;
+  transition: color 0.18s ease;
+}
+
+.navbar-link:hover {
+  color: #f2f6ff;
+}
+
+.navbar-signin-btn {
+  border-radius: 0.65rem;
+  border: 1px solid rgba(159, 175, 210, 0.42);
+  background: rgba(125, 143, 180, 0.12);
+  color: #d6e0f8;
+  padding: 0.5rem 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .site-navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}

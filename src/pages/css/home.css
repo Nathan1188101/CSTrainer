@@ -78,6 +78,105 @@
   transform: translateY(-1px);
 }
 
+.daily-challenge {
+  margin: 2.2rem auto 0;
+  max-width: 980px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.45fr 1fr;
+}
+
+.challenge-card,
+.streak-card {
+  border: 1px solid rgba(158, 170, 198, 0.2);
+  background: rgba(25, 30, 41, 0.72);
+  border-radius: 0.95rem;
+  padding: 1.1rem;
+  text-align: left;
+  backdrop-filter: blur(5px);
+}
+
+.challenge-eyebrow,
+.streak-label {
+  color: #a8b5d8;
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.challenge-card h2 {
+  margin-top: 0.35rem;
+  color: #ecf1ff;
+  font-size: 1.22rem;
+}
+
+.challenge-card p {
+  margin-top: 0.45rem;
+  color: #a6b1c9;
+}
+
+.challenge-meta {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 0.55rem;
+}
+
+.challenge-pill {
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.72rem;
+  border: 1px solid rgba(160, 175, 210, 0.35);
+  color: #d6def1;
+  background: rgba(90, 106, 138, 0.2);
+}
+
+.challenge-btn {
+  margin-top: 0.95rem;
+  border-radius: 0.72rem;
+  padding: 0.72rem 1rem;
+  background: linear-gradient(135deg, #7e57ff, #41b3ff);
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(65, 179, 255, 0.16);
+}
+
+.streak-value {
+  margin-top: 0.25rem;
+  color: #ecf1ff;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+.streak-week {
+  margin-top: 0.85rem;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.4rem;
+}
+
+.streak-day {
+  height: 2rem;
+  border-radius: 0.55rem;
+  display: grid;
+  place-items: center;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #95a2c0;
+  border: 1px solid rgba(143, 157, 188, 0.28);
+  background: rgba(58, 66, 85, 0.38);
+}
+
+.streak-day.active {
+  color: #eef4ff;
+  border-color: rgba(112, 157, 255, 0.52);
+  background: linear-gradient(145deg, rgba(126, 87, 255, 0.45), rgba(65, 179, 255, 0.42));
+}
+
+.streak-note {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #9eabc7;
+}
+
 .home-highlights {
   margin: 2.6rem auto 0;
   max-width: 980px;
@@ -190,6 +289,10 @@
   }
 
   .home-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .daily-challenge {
     grid-template-columns: 1fr;
   }
 

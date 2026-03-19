@@ -5,6 +5,7 @@
 
 import Home from '../../pages/home.jsx'
 import Signup from '../../pages/signup.jsx'
+import Login from '../../pages/login.jsx'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom" // make sure to have this for routing to work 
 
 function Routing() {
@@ -14,6 +15,7 @@ function Routing() {
                 <Routes>
                     <Route path="/" element={< Home />} />
                     <Route path="/signup" element={< Signup />} />
+                    <Route path="/login" element={< Login />} /> 
                 </Routes>
             </Router>
         </>

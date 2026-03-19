@@ -22,6 +22,44 @@ function Home() {
                 </div>
             </section>
 
+            {/* 
+            
+                Should I make this a component? either way this is good for now
+                Also this isn't actually functional right now
+
+            */}
+            <section className="daily-challenge" aria-label="Daily challenge and streak">
+                <div className="challenge-card">
+                    <p className="challenge-eyebrow">Daily Challenge</p>
+                    <h2>Two-Pointer Warmup</h2>
+                    <p>
+                        Solve one focused problem in under 8 minutes to keep your streak alive.
+                    </p>
+                    <div className="challenge-meta">
+                        <span className="challenge-pill">Medium</span>
+                        <span className="challenge-pill">8 min</span>
+                    </div>
+                    <button type="button" className="challenge-btn">
+                        Start Daily Challenge
+                    </button>
+                </div>
+
+                <aside className="streak-card">
+                    <p className="streak-label">Current streak</p>
+                    <p className="streak-value">5 days 🔥</p>
+                    <div className="streak-week" aria-label="Weekly streak progress">
+                        <span className="streak-day active">M</span>
+                        <span className="streak-day active">T</span>
+                        <span className="streak-day active">W</span>
+                        <span className="streak-day active">T</span>
+                        <span className="streak-day active">F</span>
+                        <span className="streak-day">S</span>
+                        <span className="streak-day">S</span>
+                    </div>
+                    <p className="streak-note">Complete today's challenge to keep your run going.</p>
+                </aside>
+            </section>
+
             <section className="home-highlights">
                 <article className="highlight-card">
                     <h2>Quick Sessions</h2>
